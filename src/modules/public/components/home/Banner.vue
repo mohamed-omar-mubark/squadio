@@ -82,6 +82,8 @@ export default {
   }
 
   .image-content {
+    position: relative;
+
     img {
       width: 100%;
       max-width: 526px;
