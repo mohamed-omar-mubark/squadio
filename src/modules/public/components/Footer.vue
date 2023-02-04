@@ -53,7 +53,7 @@
               class="social-media d-flex justify-start align-center mt-4 mt-md-0"
             >
               <a
-                class="bg-white pa-2 rounded-circle"
+                class="bg-white text-secondary pa-2 rounded-circle"
                 href="#"
                 aria-label="facebook"
               >
@@ -61,7 +61,7 @@
               </a>
 
               <a
-                class="bg-white pa-2 ml-3 rounded-circle"
+                class="bg-white pa-2 text-secondary ml-3 rounded-circle"
                 href="#"
                 aria-label="twitter"
               >
@@ -69,7 +69,7 @@
               </a>
 
               <a
-                class="bg-white pa-2 ml-3 rounded-circle"
+                class="bg-white pa-2 text-secondary ml-3 rounded-circle"
                 href="#"
                 aria-label="instagram"
               >
@@ -77,7 +77,7 @@
               </a>
 
               <a
-                class="bg-white pa-2 ml-3 rounded-circle"
+                class="bg-white pa-2 text-secondary ml-3 rounded-circle"
                 href="#"
                 aria-label="linkedin"
               >
@@ -122,6 +122,7 @@ export default {
 
       &:hover {
         background-color: #ffce44 !important;
+        color: #392481 !important;
       }
     }
   }
