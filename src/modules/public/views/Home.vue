@@ -9,6 +9,7 @@
         <banner />
         <trusted-by />
         <services />
+        <how-to-hire />
       </v-main>
     </v-layout>
   </v-card>
@@ -18,6 +19,7 @@
 import Banner from "../components/home/Banner.vue";
 import TrustedBy from "../components/home/TrustedBy.vue";
 import Services from "../components/home/Services.vue";
+import HowToHire from "../components/home/HowToHire.vue";
 
 export default {
   name: "Home",
@@ -26,6 +28,7 @@ export default {
     Banner,
     TrustedBy,
     Services,
+    HowToHire,
   },
 };
 </script>
