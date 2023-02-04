@@ -10,6 +10,7 @@
         <trusted-by />
         <services />
         <how-to-hire />
+        <statistics />
         <public-footer />
       </v-main>
     </v-layout>
@@ -21,6 +22,7 @@ import Banner from "../components/home/Banner.vue";
 import TrustedBy from "../components/home/TrustedBy.vue";
 import Services from "../components/home/Services.vue";
 import HowToHire from "../components/home/HowToHire.vue";
+import Statistics from "../components/home/Statistics.vue";
 import Footer from "../components/Footer.vue";
 
 export default {
@@ -31,6 +33,7 @@ export default {
     TrustedBy,
     Services,
     HowToHire,
+    Statistics,
     "public-footer": Footer,
   },
 };
