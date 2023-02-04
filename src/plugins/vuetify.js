@@ -16,6 +16,7 @@ export default createVuetify({
           black: "#212529",
           secondary: "#969696",
           yellow: "#ffce44",
+          green: "#3bd4ae",
         },
       },
     },
