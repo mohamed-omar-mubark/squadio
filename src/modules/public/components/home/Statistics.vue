@@ -1,5 +1,5 @@
 <template>
-  <section class="statistics">
+  <section class="statistics" ref="statistics">
     <div class="absolute-bg hidden-sm-and-down"></div>
     <v-container style="max-width: 1320px">
       <v-row>
@@ -30,7 +30,7 @@
                     <span
                       class="number text-primary text-h3 font-weight-black mb-2"
                     >
-                      400 +
+                      {{ talents.toFixed(0) }} +
                     </span>
                     <span class="name text-black text-h6 font-weight-medium">
                       Talents
@@ -45,7 +45,7 @@
                     <span
                       class="number text-primary text-h3 font-weight-black mb-2"
                     >
-                      100 +
+                      {{ squads.toFixed(0) }} +
                     </span>
                     <span class="name text-black text-h6 font-weight-medium">
                       Squads
@@ -60,7 +60,7 @@
                     <span
                       class="number text-primary text-h3 font-weight-black mb-2"
                     >
-                      200 +
+                      {{ projects.toFixed(0) }} +
                     </span>
                     <span class="name text-black text-h6 font-weight-medium">
                       Launched Projects
@@ -77,8 +77,42 @@
 </template>
 
 <script>
+import gsap from "gsap";
+
 export default {
   name: "Statistics",
+
+  data: () => ({
+    talents: 0,
+    squads: 0,
+    projects: 0,
+  }),
+
+  mounted() {
+    document.addEventListener("scroll", this.handleScroll);
+  },
+
+  methods: {
+    handleScroll() {
+      const { statistics } = this.$refs;
+      const { top } = statistics.getBoundingClientRect();
+
+      if (top < window.innerHeight) {
+        this.animate();
+        document.removeEventListener("scroll", this.handleScroll);
+      }
+    },
+
+    animate() {
+      gsap.to(this.$data, {
+        talents: 400,
+        squads: 100,
+        projects: 200,
+        duration: 3,
+        ease: "power4.out",
+      });
+    },
+  },
 };
 </script>
 
