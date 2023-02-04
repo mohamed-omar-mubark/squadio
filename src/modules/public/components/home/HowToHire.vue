@@ -1,5 +1,5 @@
 <template>
-  <section class="how-to-hire bg-primary">
+  <section class="how-to-hire bg-primary" id="how-it-work">
     <v-container style="max-width: 1320px">
       <div
         class="section-title d-flex flex-column flex-md-row justify-center align-center"

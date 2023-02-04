@@ -1,5 +1,5 @@
 <template>
-  <section class="trusted-by py-7">
+  <section class="trusted-by py-7" id="trusted-by">
     <v-container style="max-width: 1320px">
       <v-row class="align-center">
         <v-col cols="12" md="3">

@@ -1,11 +1,12 @@
 <template>
-  <v-card>
+  <v-card rounded="0">
     <v-layout>
       <!-- <v-app-bar elevation="0" color="transparent">
         <v-toolbar-title class="text-h5">Home</v-toolbar-title>
       </v-app-bar> -->
 
       <v-main style="min-height: 150vh">
+        <public-header />
         <banner />
         <trusted-by />
         <services />
@@ -18,6 +19,7 @@
 </template>
 
 <script>
+import Header from "../components/Header.vue";
 import Banner from "../components/home/Banner.vue";
 import TrustedBy from "../components/home/TrustedBy.vue";
 import Services from "../components/home/Services.vue";
@@ -29,6 +31,7 @@ export default {
   name: "Home",
 
   components: {
+    "public-header": Header,
     Banner,
     TrustedBy,
     Services,

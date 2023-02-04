@@ -1,5 +1,5 @@
 <template>
-  <section class="statistics" ref="statistics">
+  <section class="statistics" ref="statistics" id="statistics">
     <div class="absolute-bg hidden-sm-and-down"></div>
     <v-container style="max-width: 1320px">
       <v-row>

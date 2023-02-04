@@ -1,5 +1,5 @@
 <template>
-  <section class="banner bg-primary">
+  <section class="banner bg-primary" id="banner">
     <v-container style="max-width: 1320px">
       <v-row class="align-center" style="height: 100vh">
         <v-col cols="12" md="6" class="order-1 order-md-0">
@@ -51,6 +51,7 @@ export default {
   height: auto;
   min-height: 100vh;
   overflow: hidden;
+  padding-top: 80px;
 
   &::before {
     position: absolute;
