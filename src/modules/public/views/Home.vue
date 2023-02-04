@@ -7,6 +7,7 @@
 
       <v-main style="min-height: 150vh">
         <banner />
+        <trusted-by />
       </v-main>
     </v-layout>
   </v-card>
@@ -14,12 +15,14 @@
 
 <script>
 import Banner from "../components/home/Banner.vue";
+import TrustedBy from "../components/home/TrustedBy.vue";
 
 export default {
   name: "Home",
 
   components: {
     Banner,
+    TrustedBy,
   },
 };
 </script>
